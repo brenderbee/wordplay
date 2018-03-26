@@ -9,11 +9,11 @@ $(document).ready(function(){
     var longWords = words.filter(function(word){
       return word.length > 3;
     });
-    // var longWords = words.forEach(function(word) {
-    //   return word.length > 3;
-    // });
+    longWords.reverse();
 
-    console.log(longWords);
+    var string = longWords.join(',');
+
+    $(".output").text(string);
 
   });
 });
